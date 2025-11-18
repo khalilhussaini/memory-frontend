@@ -1,0 +1,321 @@
+.page {
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  justify-content: flex-start;
+  gap: 0px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  flex-direction: column;
+  padding: 40px 20px;
+  min-height: 100vh;
+  color: #333;
+  box-sizing: border-box;
+}
+
+.cardsWrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  width: 100%;
+  padding: 30px;
+  justify-content: center;
+  align-items: center;
+  max-width: 600px;
+  margin-bottom: 40px;
+  background-color: #ffffff;
+  transition: all 0.3s;
+  box-shadow: 0 20px 890000px rgb(0, 0, 0, 0.1);
+  background-color: rgba(255, 255, 255, 0.3);
+  border-radius: 20px;
+  box-sizing: border-box;
+}
+
+.card {
+  display: flex;
+  border: 16px;
+  border-radius: 20px;
+  justify-content: center;
+  align-items: center;
+  justify-items: center;
+  width: 100px;
+  height: 100px;
+  position: relative;
+  box-shadow: 0 6px 10px rgb(125, 111, 111);
+  background-color: rgba(255, 255, 255, 0.3);
+  cursor: pointer;
+  perspective: 1000px;
+  transition: 0.25, 0.25s;
+  color: #fff;
+  border-image: 6000px;
+
+}
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgb(52, 152, 219, 0.3);
+}
+
+.cardsback {
+  width: 100%;
+  height: 100%;
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #2d83bd;
+  font-size: 2rem;
+  color: #ffffff;
+  font-weight: 600;
+  backface-visibility: hidden;
+}
+
+.dasboardTitle {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.restartbutton {
+  padding: 12px 24px;
+  margin-top: 84px;
+  font-weight: 600;
+  font-size: 1rem;
+  background-color: #2d83bd;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s;
+  box-shadow: 0 6px 16px rgb(39, 174, 96, 0.3);
+}
+
+.restartbuttonbutton {
+  padding: 12px 24px;
+  font-weight: 600;
+  font-size: 1rem;
+  background-color: #2d83bd;
+  color: #2d83bd;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s;
+  box-shadow: 0 6px 16px rgb(39, 174, 96, 0.3);
+}
+
+.restartbuttonbutton :hover {
+  background-color: #0099ff;
+  transform: translate(-2px);
+  box-shadow: 0 8px 20px rgb(39, 174, 96, 0.4);
+}
+
+.restartbutton:hover {
+  background-color: #0099ff;
+  transform: translate(-2px);
+  box-shadow: 0 8px 20px rgb(39, 174, 96, 0.4);
+}
+
+.dashboardPage {
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  margin-top: 30px;
+}
+
+.dashboard {
+  width: 100%;
+  max-width: 900px;
+  background-color: #ffffff;
+  padding: 2rem;
+  border-radius: 20rem;
+  box-shadow: 0 10px 30px rgb(0, 0, 0, 0, 8);
+  margin-top: 0px;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  color: #344f69;
+}
+
+.dashboard h2 {
+  margin-bottom: 1.5rem;
+  font-size: 2rem;
+  color: #344f69;
+  font-weight: 700;
+  text-align: center;
+}
+
+.scoreTable {
+  width: 100%;
+  max-width: 800px;
+  border-collapse: separate;
+  box-shadow: 0 8px 24px rgb(0, 0, 0, 0.05);
+  overflow-x: hidden;
+  margin-top: 30px;
+  border-spacing: 0;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  border-spacing: 0;
+}
+
+.scoreTable thead {
+  background-color: #bfc9d3;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-weight: bolder;
+}
+
+.scoreTable th {
+  padding: 30px 110px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 40px;
+}
+
+.scoreTable td {
+  padding: 30px 60px;
+  border-bottom: 1px solid #e1e4e8;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 40px;
+  border-end-start-radius: 19px;
+}
+
+.scoreTable tr:hover {
+  background-color: #e6e4e4;
+}
+
+.scoreTable th {
+  color: #2c3e50;
+  text-transform: uppercase;
+  font-size: 0.85rem;
+  letter-spacing: 0.5px;
+}
+
+.scoreTable td {
+  color: #344f69;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: small;
+}
+
+.scoreTable {
+  table-layout: auto;
+}
+
+.navabar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 30px;
+  box-shadow: 0 10px 16px rgba(0, 0, 0, 0.1);
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  top: 0;
+  z-index: 1000;
+  background-color: #ffffff;
+}
+
+.titlePart {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 15px 30px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  z-index: 1000;
+}
+
+.titlePart ul {
+  display: flex;
+  gap: 120px 20px;
+  list-style: none;
+  margin-right: -290px;
+  margin-bottom: 10px;
+  margin-top: -120px;
+}
+
+.titlePart li {
+  font-size: 1.2rem;
+}
+
+.titlePartPart {
+  display: flex;
+  justify-content: flex-start;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  margin-left: -360px;
+  color: #2d83bd;
+}
+
+.titlePartPart ul {
+  display: flex;
+  gap: 5px 115px;
+  list-style: none;
+  margin-right: -300px;
+  margin-bottom: -20px;
+}
+
+.titlePartPart li {
+  font-size: 1.2rem;
+}
+
+.navabar ul {
+  display: flex;
+  gap: 25px;
+  list-style: none;
+  margin: 0%;
+  padding: 0%;
+}
+
+.navabar li {
+  font-size: 1.2rem;
+}
+
+.navabar a {
+  text-decoration: none;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  margin: 0%;
+  padding: 30px 18px;
+  border-radius: 8px;
+  color: #344f69;
+  display: inline-block;
+  font-size: 1.2rem;
+  font-weight: 600;
+  transition: all 0.3s;
+}
+
+.navabar a:hover,
+.navabar a:focus {
+  background-color: #e6f2fc;
+  transform: translate(-2px);
+  color: #2d82bd;
+  box-shadow: 0 4px 12px rgb(0, 153, 255, 0.2);
+}
+
+.active a {
+  color: #00bfff;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.active {
+  display: inline-block;
+  margin-right: 15px;
+}
+
+@media(max-width:600px) {
+  .cardsWrapper {
+    gap: 14px;
+    padding: 20px;
+  }
+
+  .card {
+    width: 80px;
+    height: 80px;
+  }
+
+  .title {
+    font-size: 1rem;
+  }
+
+  .dashboard h2 {
+    font-size: 1.5rem;
+  }
+
+  .restartbutton {
+    padding: 10px 18px;
+    font-size: 0.95rem;
+  }
+}
